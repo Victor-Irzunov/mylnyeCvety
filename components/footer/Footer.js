@@ -36,7 +36,7 @@ export const Footer = () => {
 									alt='иконка telegram'
 								/>
 							</a>
-							<a href='viber://chat?number=%2B37533'>
+							<a href='viber://chat?number=%2B375291925166'>
 								<Image
 									src='viber.svg'
 									width={35} height={35}
@@ -53,6 +53,11 @@ export const Footer = () => {
 									className=''
 									alt='иконка instagram'
 								/>
+							</a>
+						</div>
+						<div className="mt-4">
+							<a href="mail:niko4ka-v@mail.ru" target='_blank'>
+								niko4ka-v@mail.ru
 							</a>
 						</div>
 					</div>
