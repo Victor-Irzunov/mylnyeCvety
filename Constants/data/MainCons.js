@@ -19,7 +19,7 @@ export const dataMain = [
 		id: 2,
 		img: '/time.svg',
 		alt: 'Букеты из цветов иконка время',
-		title1: 'Изготовление в течении дня',
+		title1: 'Изготовлении в течении дня',
 		width: '30',
 		height: '30',
 		message: 	`
