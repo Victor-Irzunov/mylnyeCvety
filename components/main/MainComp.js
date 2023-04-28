@@ -28,19 +28,18 @@ export const MainComp = () => {
 				<div className='w-full h-screen fon bg-cover bg-center' />
 				<main className="">
 
-
 					{
 						screens.lg ?
 							<div className="flex">
 								<div className="w-4/6">
 									<CarouselComp />
 								</div>
-								<div className="bg-white w-2/6 relative px-5 py-4  shadow-xl">
+								<div className="w-2/6 bg-white relative px-10 pt-20 pb-4  shadow-xl">
 									{
 										dataMain.map(el => {
 											return (
 												<div
-													className="flex items-center mt-2 cursor-pointer"
+													className="flex items-center mb-4 cursor-pointer"
 													onClick={() => showModal(el.title1, el.message)}
 													key={el.id}
 												>
@@ -50,7 +49,7 @@ export const MainComp = () => {
 														height={el.height}
 														alt={el.alt}
 													/>
-													<span className="font-light ml-2 uppercase">
+													<span className="font-light ml-4 uppercase">
 														{el.title1}
 													</span>
 												</div>
@@ -64,10 +63,11 @@ export const MainComp = () => {
 					}
 
 					<section className='container mx-auto relative mb-20'>
-						<h1 className="mt-20 xyy:text-4xl sm:text-7xl uppercase font-semibold text-white mb-16">
-							Букеты из мыла
-						</h1>
-
+						<div className="sm:h-[60vh] xyy:h-auto">
+							<h1 className="mt-20 xyy:text-4xl sm:text-8xl uppercase font-semibold text-white mb-16">
+								Букеты из мыла
+							</h1>
+						</div>
 						{
 							!screens.lg && dataMain.map(el => {
 								return (

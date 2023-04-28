@@ -21,7 +21,7 @@ const MobilHeader = () => {
 
 					<div className='w-1/2 text-[#613538]'>
 						<p className='text-xs'>
-							режим работы 24/7
+							приём заказов 24/7
 						</p>
 						<a href='tel:80291925166'>
 							+375(29) 192-51-66 

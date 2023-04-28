@@ -16,7 +16,7 @@ const ModalComp = (
 	return (
 		<>
 			<Modal
-				title={`Ваш заказ: ${title}`}
+				title={`${!isActive ? 'Ваш заказ:': ''} ${title}`}
 				open={isModalOpen}
 				onCancel={handleCancel}
 				footer={false}

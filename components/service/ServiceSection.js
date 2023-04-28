@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Button, Rate, Typography, Badge } from 'antd'
-import { UpOutlined } from '@ant-design/icons'
+import { UpOutlined, FullscreenExitOutlined } from '@ant-design/icons'
 import { useState } from "react"
 import { dataService } from "@/Constants/data/ServiceSection"
 import ModalComp from "../modal/ModalComp"
@@ -30,7 +30,7 @@ const ServiceSection = () => {
 
 
 	return (
-		<section className='bg-white pt-5 pb-1 relative' id="catalog">
+		<section className='bg-white pt-10 pb-1 relative' id="catalog">
 			<div className='container mx-auto'>
 
 				<h2 className="text-4xl font-bold uppercase text-center">
@@ -40,38 +40,52 @@ const ServiceSection = () => {
 				</h2>
 
 
-				<div className="mt-12">
+				<div className="mt-16 flex justify-evenly items-center flex-wrap">
 					{
 						dataService.map(el => {
 							return (
-								<div className="mb-20" key={el.id} id={el.nav}>
+								<div className="mb-20 w-[400px] xyy:mx-0 sm:mx-5 " key={el.id} id={el.nav}>
 									<Badge.Ribbon
 										text={el.badge}
 										color={el.color}
 									>
 										<div
-											className={`border border-gray-200 bg-slate-100 rounded-md relative  shadow-xl ${visible[el.id] ? 'pb-10' : 'pb-0'}`}
+											className={`bg-slate-100 rounded-md relative  shadow-lg ${visible[el.id] ? 'pb-10' : 'pb-0'}`}
 										>
-											<Image
-												src='/click.svg'
-												width='30'
-												alt="иконка клик"
-												height='30'
+											{
+												!visible[el.id] ?
+													<Image
+														src='/click.svg'
+														width='30'
+														alt="иконка клик"
+														height='30'
 
-												className={`absolute top-2 left-2 ${!visible[el.id] ? 'block' : 'hidden'}`}
-											/>
+														className={`absolute top-2 left-2`}
+													/>
+													:
+													<FullscreenExitOutlined
+														className={`absolute top-2 left-2 text-pink-400 text-2xl`}
+														onClick={() => toggleVisibility(el.id, false)}
+													/>
+											}
+
 											<div
 												style={{ '--image-url': `url(${el.img})` }}
-												className={`bg-[image:var(--image-url)] bg-cover bg-center w-full rounded-t-md z-10`}
+												className={`
+												bg-[image:var(--image-url)] bg-cover
+												bg-center w-full rounded-md z-10
+												`}
 												onClick={() => toggleVisibility(el.id, true)}
 											>
 												<div className="h-[40vh]" />
 												<div
 													className={`h-[20vh] flex 
-										justify-center items-end
+										justify-center items-end rounded-b-md
 										 text-pink-400 bg-gradient-to-t
-										 from-white/100 to-white/0
-										 z-20 ${!visible[el.id] ? 'block' : 'hidden'}`}
+										 from-white/100 to-white/0 px-3
+										 z-20 ${!visible[el.id] ? 'block' : 'hidden'}
+
+										 `}
 												>
 													<h3 className="uppercase text-center text-2xl pb-3 font-semibold">
 														{el.title}
