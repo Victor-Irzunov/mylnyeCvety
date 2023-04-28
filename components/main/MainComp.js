@@ -63,7 +63,7 @@ export const MainComp = () => {
 					}
 
 					<section className='container mx-auto relative mb-20'>
-						<div className="sm:h-[60vh] xyy:h-auto">
+						<div className="sm:h-[40vh] xyy:h-auto">
 							<h1 className="mt-20 xyy:text-4xl sm:text-8xl uppercase font-semibold text-white mb-16">
 								Букеты из мыла
 							</h1>

@@ -40,11 +40,11 @@ const ServiceSection = () => {
 				</h2>
 
 
-				<div className="mt-16 flex justify-evenly items-center flex-wrap">
+				<div className="mt-16 flex justify-evenly flex-wrap">
 					{
 						dataService.map(el => {
 							return (
-								<div className="mb-20 w-[400px] xyy:mx-0 sm:mx-5 " key={el.id} id={el.nav}>
+								<div className="mb-20 w-[400px] xyy:mx-0 sm:mx-5" key={el.id} id={el.nav}>
 									<Badge.Ribbon
 										text={el.badge}
 										color={el.color}
@@ -73,7 +73,7 @@ const ServiceSection = () => {
 												style={{ '--image-url': `url(${el.img})` }}
 												className={`
 												bg-[image:var(--image-url)] bg-cover
-												bg-center w-full rounded-md z-10
+												bg-center w-full rounded-md z-10 cursor-pointer
 												`}
 												onClick={() => toggleVisibility(el.id, true)}
 											>
