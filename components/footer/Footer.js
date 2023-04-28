@@ -44,7 +44,7 @@ export const Footer = () => {
 									alt='иконка viber'
 								/>
 							</a>
-							<a href='https://www.instagram.com/copyprint.podarki/'
+							<a href='https://www.instagram.com/lily.soapflowers'
 								target='_blank'
 							>
 								<Image
