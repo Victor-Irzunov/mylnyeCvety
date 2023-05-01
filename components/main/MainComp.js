@@ -8,6 +8,8 @@ import { useScreens } from "@/Constants/constants"
 import { FloatButton } from 'antd'
 import { PhoneOutlined } from '@ant-design/icons'
 import GallerySection from "../gallery/GallerySection"
+import { motion, useAnimation } from "framer-motion"
+import { titleAnimation, yCustomAnimation } from "@/Constants/animation/AnimationConst"
 
 export const MainComp = () => {
 	const [isModalOpen, setIsModalOpen] = useState(false)
@@ -63,32 +65,46 @@ export const MainComp = () => {
 					}
 
 					<section className='container mx-auto relative mb-20'>
-						<div className="sm:h-[40vh] xyy:h-auto">
-							<h1 className="mt-20 xyy:text-4xl sm:text-8xl uppercase font-semibold text-white mb-16">
+						<motion.div
+							className="sm:h-[40vh] xyy:h-auto"
+							initial="hidden"
+							whileInView="visible"
+						>
+							<motion.h1
+								className="mt-20 xyy:text-4xl sm:text-8xl uppercase font-semibold text-white mb-16"
+								variants={titleAnimation}
+							>
 								Букеты из мыла
-							</h1>
-						</div>
-						{
-							!screens.lg && dataMain.map(el => {
-								return (
-									<div
-										className="text-white flex items-center mt-2"
-										onClick={() => showModal(el.title1, el.message)}
-										key={el.id}
-									>
-										<Image
-											src={el.img}
-											width={el.width}
-											height={el.height}
-											alt={el.alt}
-										/>
-										<span className={`font-light  ${el.id === 2 ? 'ml-4' : 'ml-3'} uppercase`}>
-											{el.title1}
-										</span>
-									</div>
-								)
-							})
-						}
+							</motion.h1>
+						</motion.div>
+
+						<motion.div initial="hidden"
+							whileInView="visible"
+						>
+							{
+								!screens.lg && dataMain.map(el => {
+									return (
+										<motion.div
+											variants={yCustomAnimation}
+											custom={el.id + 1}
+											className="text-white flex items-center mt-2"
+											onClick={() => showModal(el.title1, el.message)}
+											key={el.id}
+										>
+											<Image
+												src={el.img}
+												width={el.width}
+												height={el.height}
+												alt={el.alt}
+											/>
+											<span className={`font-light  ${el.id === 2 ? 'ml-4' : 'ml-3'} uppercase`}>
+												{el.title1}
+											</span>
+										</motion.div>
+									)
+								})
+							}
+						</motion.div>
 					</section>
 
 					<ServiceSection />

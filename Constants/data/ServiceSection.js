@@ -17,7 +17,7 @@ export const dataService = [
 				id: 2,
 				img: '/shlyapnye_2.webp',
 				title: 'Букет',
-				description: 'd=12 см',
+				description: 'диаметр коробки - 12 см',
 				rate: 4.5,
 				price: '40',
 				art: 'LSF-002',
@@ -26,7 +26,7 @@ export const dataService = [
 				id: 3,
 				img: '/shlyapnye_3.webp',
 				title: 'Букет',
-				description: 'd=14 см',
+				description: 'диаметр коробки - 14 см',
 				rate: 5,
 				price: '50',
 				art: 'LSF-003',
@@ -35,7 +35,7 @@ export const dataService = [
 				id: 4,
 				img: '/shlyapnye_4.webp',
 				title: 'Букет',
-				description: 'd=16 см',
+				description: 'диаметр коробки - 16 см',
 				rate: 5,
 				price: '60',
 				art: 'LSF-004',
@@ -44,7 +44,7 @@ export const dataService = [
 				id: 5,
 				img: '/shlyapnye_5.webp',
 				title: 'Букет',
-				description: '?',
+				description: 'диаметр коробки - 16 см',
 				rate: 5,
 				price: '60',
 				art: 'LSF-004',
@@ -69,8 +69,8 @@ export const dataService = [
 			{
 				id: 2,
 				img: '/sumochki_2.webp',
-				title: 'Букет в сумочке',
-				description: 'с цепочкой',
+				title: 'Букет в сумочке с цепочкой',
+				description: '15x10x10 см.',
 				rate: 4.5,
 				price: '40',
 				art: 'LSF-005',
@@ -79,7 +79,7 @@ export const dataService = [
 				id: 3,
 				img: '/sumochki_3.webp',
 				title: 'Букет в сумочке',
-				description: '',
+				description: '22x11x14 см.',
 				rate: 5,
 				price: '35',
 				art: 'LSF-006',
@@ -88,7 +88,7 @@ export const dataService = [
 				id: 4,
 				img: '/sumochki_4.webp',
 				title: 'Букет в сумочке',
-				description: '',
+				description: '12,5x11,5x12,5 см.',
 				rate: 4,
 				price: '30',
 				art: 'LSF-007',
@@ -97,7 +97,7 @@ export const dataService = [
 				id: 5,
 				img: '/sumochki_5.webp',
 				title: 'Букет в сумочке',
-				description: '',
+				description: '9х6,5х10 см.',
 				rate: 5,
 				price: '25',
 				art: 'LSF-008',
@@ -122,7 +122,7 @@ export const dataService = [
 				id: 2,
 				img: '/derevyannyh_2.webp',
 				title: 'Букет в деревянном ящике',
-				description: '',
+				description: '14см*14см',
 				rate: 4.5,
 				price: '50',
 				art: 'LSF-009',
@@ -131,7 +131,7 @@ export const dataService = [
 				id: 3,
 				img: '/derevyannyh_3.webp',
 				title: 'Букет в деревянном ящике',
-				description: '',
+				description: '14см*14см',
 				rate: 5,
 				price: '50',
 				art: 'LSF-010',
@@ -140,7 +140,7 @@ export const dataService = [
 				id: 4,
 				img: '/derevyannyh.webp',
 				title: 'Букет в деревянном ящике',
-				description: '',
+				description: '14см*14см',
 				rate: 4,
 				price: '50',
 				art: 'LSF-011',
@@ -167,7 +167,7 @@ export const dataService = [
 				id: 2,
 				img: '/vertikalnye_2.webp',
 				title: 'Букет в вертикальной коробке',
-				description: '',
+				description: '15,5см*12см*19см',
 				rate: 4.5,
 				price: '40',
 				art: 'LSF-012',
@@ -176,7 +176,7 @@ export const dataService = [
 				id: 3,
 				img: '/vertikalnye_3.webp',
 				title: 'Букет в вертикальной коробке',
-				description: '',
+				description: '15,5см*12см*19см',
 				rate: 5,
 				price: '40',
 				art: 'LSF-013',
@@ -185,7 +185,7 @@ export const dataService = [
 				id: 4,
 				img: '/vertikalnye.webp',
 				title: 'Букет в вертикальной коробке',
-				description: '',
+				description: '15,5см*12см*19см',
 				rate: 4,
 				price: '40',
 				art: 'LSF-014',
@@ -215,7 +215,7 @@ export const dataService = [
 				title: 'Минибукет',
 				description: '',
 				rate: 4.5,
-				price: 'от 15',
+				price: '15',
 				art: 'LSF-016',
 			},
 			{
@@ -224,7 +224,7 @@ export const dataService = [
 				title: 'Букет',
 				description: '',
 				rate: 5,
-				price: '20-30',
+				price: '15-20',
 				art: 'LSF-017',
 			},
 			{
@@ -339,14 +339,14 @@ export const dataService = [
 				title: 'Цветы в корзине',
 				description: '',
 				rate: 5,
-				price: 'от 55',
+				price: 'от 50',
 				art: 'LSF-028',
 			},
 			{
 				id: 3,
 				img: '/karzina_3.webp',
 				title: 'Цветы в корзине',
-				description: '',
+				description: 'D25*21*11*25см',
 				rate: 5,
 				price: 'от 55',
 				art: 'LSF-029',
@@ -380,36 +380,72 @@ export const dataService = [
 				id: 2,
 				img: '/mono_2.webp',
 				title: 'Моно Букеты',
-				description: '',
+				description: (<span className="flex flex-col">
+					<span className="font-semibold">Розы</span>
+					<span className="">15 шт - 37 руб</span>
+					<span className="">19 шт - 42 руб</span>
+					<span className="">21 шт - 45 руб</span>
+					<span className="">25 шт - 50 руб</span>
+					<span className="">29 шт - 55 руб</span>
+					<span className="">51 шт - 90 руб</span>
+					<span className="">101 шт - 150 руб</span>
+				</span>),
 				rate: 5,
-				price: 'от ..',
+				price: 'от 37',
 				art: 'LSF-032',
 			},
 			{
 				id: 3,
 				img: '/mono_3.webp',
 				title: 'Моно Букеты',
-				description: '',
+				description: (<span className="flex flex-col">
+				<span className="font-semibold">Розы</span>
+				<span className="">15 шт - 37 руб</span>
+				<span className="">19 шт - 42 руб</span>
+				<span className="">21 шт - 45 руб</span>
+				<span className="">25 шт - 50 руб</span>
+				<span className="">29 шт - 55 руб</span>
+				<span className="">51 шт - 90 руб</span>
+				<span className="">101 шт - 150 руб</span>
+			</span>),
 				rate: 5,
-				price: 'от ..',
+				price: 'от 37',
 				art: 'LSF-033',
 			},
 			{
 				id: 4,
 				img: '/mono_4.webp',
 				title: 'Моно Букеты',
-				description: '',
+				description: (<span className="flex flex-col">
+					<span className="font-semibold">Розы</span>
+					<span className="">15 шт - 37 руб</span>
+					<span className="">19 шт - 42 руб</span>
+					<span className="">21 шт - 45 руб</span>
+					<span className="">25 шт - 50 руб</span>
+					<span className="">29 шт - 55 руб</span>
+					<span className="">51 шт - 90 руб</span>
+					<span className="">101 шт - 150 руб</span>
+				</span>),
 				rate: 4.5,
-				price: 'от ..',
+				price: 'от 37',
 				art: 'LSF-034',
 			},
 			{
 				id: 5,
 				img: '/mono.webp',
 				title: 'Моно Букеты',
-				description: '',
+				description: (<span className="flex flex-col">
+				<span className="font-semibold">Розы</span>
+				<span className="">15 шт - 37 руб</span>
+				<span className="">19 шт - 42 руб</span>
+				<span className="">21 шт - 45 руб</span>
+				<span className="">25 шт - 50 руб</span>
+				<span className="">29 шт - 55 руб</span>
+				<span className="">51 шт - 90 руб</span>
+				<span className="">101 шт - 150 руб</span>
+			</span>),
 				rate: 4.5,
-				price: 'от ..',
+				price: 'от 37',
 				art: 'LSF-035',
 			},
 		
