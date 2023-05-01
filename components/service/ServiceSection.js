@@ -67,26 +67,27 @@ const ServiceSection = () => {
 										className={`bg-slate-100 rounded-md relative  shadow-lg ${visible[el.id] ? 'pb-10' : 'pb-0'}`}
 									>
 
-										{
-											!visible[el.id] ?
-												<Image
-													src='/click.svg'
-													width='30'
-													alt="иконка клик"
-													height='30'
 
-													className={`absolute top-2 left-2`}
-												/>
-												:
-												<FullscreenExitOutlined
-													className={`absolute top-2 left-2 text-pink-400 text-2xl`}
-													onClick={() => toggleVisibility(el.id, false)}
-												/>
-										}
 										<Badge.Ribbon
 											text={el.badge}
 											color={el.color}
 										>
+											{
+												!visible[el.id] ?
+													<Image
+														src='/click.svg'
+														width='30'
+														alt="иконка клик"
+														height='30'
+
+														className={`absolute top-2 left-2`}
+													/>
+													:
+													<FullscreenExitOutlined
+														className={`absolute top-2 left-2 text-pink-400 text-2xl`}
+														onClick={() => toggleVisibility(el.id, false)}
+													/>
+											}
 											<div
 												style={{ '--image-url': `url(${el.img})` }}
 												className={`
